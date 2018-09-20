@@ -1,0 +1,38 @@
+ <!-- 
+Another approach of data driven Approach
+Driving the data from different resources
+ Data Driven will be like this 
+a. Excel File : test data
+b. Properties file : Env var or Test data
+c. testng.xml : Env Var . We dont store test data in testng.xml. Its not a good practice
+d. xml files
+e. JSON files
+f. DB
+
+Most popular is first Excel, Properties and tetng.xml files
+
+these variables env, browser etc are called Environment Variable
+These variables will be generic. General throught the prg
+These ariables will be used by each and every class
+like username and password will remain same
+i am executing in QA env . like https://login.yahoo.qa.com
+90% of companies will use this or config.properties
+ -->
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Yahoo App Test Automation Suite">
+	<test name="Yahoo App Test">
+
+		<parameter name="env" value="QA" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://login.yahoo.com/" />
+		<parameter name="emailId" value="test@yahoo.com" />
+		<parameter name="password" value="ramya.gg" />
+
+		<classes>
+			<class name="com.parameters.ParameterTest" />
+
+		</classes>
+	</test>
+</suite>

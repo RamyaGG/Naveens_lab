@@ -1,0 +1,21 @@
+<!-- testng.xml - also called template file or runner file this file is 
+	used to execute all the test cases one by one this file is used to execute 
+	all the Classes one by one this is the complete definition of how many test 
+	cases you have written and if you want to execute in a single shot you can 
+	write it -->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Seesion Test Automation Suite">
+	<test name="Different Testing Features Test">
+		<classes>
+			<class name="com.test.ExceptionTimeOutTest" />
+			<class name="com.test.GoogleTest" />
+			<class name="com.test.GoogleTitleTest" />
+			<class name="com.test.InvocationCountTest" />
+			<class name="com.test.TestNgBasics" />
+			<class name="com.test.TestNgFeatures" />
+		</classes>
+	</test>
+</suite> 
+
+

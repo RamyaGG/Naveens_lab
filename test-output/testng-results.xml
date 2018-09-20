@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="133" started-at="2018-06-24T07:24:18Z" finished-at="2018-06-24T07:24:18Z">
+    <groups>
+      <group name="A">
+        <method signature="TestNgFeatures.aissing()[pri:0, instance:com.test.TestNgFeatures@4abdb505]" name="aissing" class="com.test.TestNgFeatures"/>
+      </group> <!-- A -->
+    </groups>
+    <test name="Default test" duration-ms="133" started-at="2018-06-24T07:24:18Z" finished-at="2018-06-24T07:24:18Z">
+      <class name="com.test.TestNgFeatures">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.test.TestNgFeatures@4abdb505]" name="loginTest" duration-ms="37" started-at="2018-06-24T07:24:18Z" finished-at="2018-06-24T07:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="aissing()[pri:0, instance:com.test.TestNgFeatures@4abdb505]" name="aissing" duration-ms="3" started-at="2018-06-24T07:24:18Z" finished-at="2018-06-24T07:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aissing -->
+        <test-method status="PASS" signature="regPageTest()[pri:3, instance:com.test.TestNgFeatures@4abdb505]" name="regPageTest" duration-ms="3" started-at="2018-06-24T07:24:18Z" depends-on-methods="com.test.TestNgFeatures.loginTest" finished-at="2018-06-24T07:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regPageTest -->
+        <test-method status="PASS" signature="homePageTest()[pri:2, instance:com.test.TestNgFeatures@4abdb505]" name="homePageTest" duration-ms="4" started-at="2018-06-24T07:24:18Z" depends-on-methods="com.test.TestNgFeatures.regPageTest" finished-at="2018-06-24T07:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method status="PASS" signature="searchPageTest()[pri:1, instance:com.test.TestNgFeatures@4abdb505]" name="searchPageTest" duration-ms="7" started-at="2018-06-24T07:24:18Z" depends-on-methods="com.test.TestNgFeatures.loginTest, com.test.TestNgFeatures.homePageTest" finished-at="2018-06-24T07:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPageTest -->
+      </class> <!-- com.test.TestNgFeatures -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
