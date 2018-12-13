@@ -15,19 +15,16 @@ public class MouseMovementConcept {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.get("http://spicejet.com");
 		
 		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(By.xpath("//a[@id='highlight-addons']"))).build().perform();
-		driver.findElement(By.partialLinkText("SpiceClub")).click();
+		action.moveToElement(driver.findElement(By.xpath("//li[@id='header-addons']//a[@id='highlight-addons']"))).build().perform();
 		
 		action.moveToElement(driver.findElement(By.xpath("//a[@id='ctl00_HyperLinkLogin']"))).build().perform();
-		action.moveToElement(driver.findElement(By.partialLinkText("SpiceCash"))).build().perform();
+		action.moveToElement(driver.findElement(By.partialLinkText("SpiceClub"))).build().perform();
 		driver.findElement(By.linkText("Member Login")).click();
-
 	}
-
 }

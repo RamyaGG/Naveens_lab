@@ -25,6 +25,12 @@ public class TakeScreenShotConcept {
 		//Copy the ScreenShot to desired location using copyFile Method
 		FileUtils.copyFile(src, new File("H:\\Edureka\\Selenium\\WorkSpace\\Naveens_lab\\src\\SeleniumSessions\\google.png"));
 		
+		
+		//Using TestNG ITestListener we can take screenShot for the only for the failed test cases
+		//To do this we have to create one separate class which implements ITestListener and implement all the related methods
+		//Inside onTestFailure method we have to write code for taking screenshot
+		//In test class . On top of the class name after import we have to write like this
+		//@Listener(ListenerClassName.class)
 	}
 
 }

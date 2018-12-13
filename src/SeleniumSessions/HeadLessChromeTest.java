@@ -34,6 +34,7 @@ public class HeadLessChromeTest {
 		// if the application is compatible with mob then no need to write the above window-size
 		//so it is good practice to define window size
 		options.addArguments("headless");
+		//options.addArguments("--incognito"); //to run in private mode
 		
 		WebDriver driver = new ChromeDriver(options);
 

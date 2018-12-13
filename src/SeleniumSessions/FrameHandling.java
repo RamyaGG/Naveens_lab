@@ -18,8 +18,7 @@ public class FrameHandling {
 		driver.manage().window().maximize();
 		
 		SearchContext driver1 = new ChromeDriver();
-		
-		
+
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		
@@ -39,7 +38,6 @@ public class FrameHandling {
 		 */
 
 		driver.switchTo().frame("mainpanel");
-		
 
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
@@ -52,12 +50,8 @@ public class FrameHandling {
 		 * driver.switchTo().defaultContent();﻿
 		 */
 
-		
 		//driver.switchTo().defaultContent();
 		//driver.switchTo().frame("leftpanel");
-		//Thread.sleep(2000);
-		
-		
+		//Thread.sleep(2000);	
 	}
-
 }

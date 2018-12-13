@@ -15,7 +15,7 @@ public class HandleFileUploadPop {
 		driver.get("https://html.com/input-type-file/");
 		Thread.sleep(5000);
 		
-		driver.findElement(By.id("fileupload")).sendKeys("H:\\Edureka\\Selenium\\Sample.txt");
+		driver.findElement(By.id("fileupload")).sendKeys("H:\\Edureka\\Selenium\\Sample.txt"); // type should be file
 		
 
 	}

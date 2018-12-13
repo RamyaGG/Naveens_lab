@@ -40,7 +40,7 @@ public class BrokenLink404Test {
 		
 		System.out.println("Size of full links and images -->"+linksList.size());
 		
-		//if href is not available the we will not consider that one
+		//if href is not available then we will not consider that one
 		
 		List<WebElement> activeLinks = new ArrayList<WebElement>();
 		

@@ -11,7 +11,7 @@ public class ElementVisibilityTest {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "H:\\Edureka\\Selenium\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies(); 
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
@@ -37,7 +37,7 @@ public class ElementVisibilityTest {
 	    
 	    //de-select the checkbox
 	    driver.findElement(By.name("agreeTerms")).click(); // submit button is enabled now
-		boolean b5 = driver.findElement(By.id("submitButton")).isSelected();
+		boolean b5 = driver.findElement(By.name("agreeTerms")).isSelected();
 		System.out.println(b5);
 	    
 

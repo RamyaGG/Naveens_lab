@@ -18,7 +18,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class JavaScriptExecutorConcept {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "H:\\Edureka\\Selenium\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
@@ -86,7 +86,7 @@ public class JavaScriptExecutorConcept {
 //what is javascript executor
 //
 	
-	public static void flash(WebElement element, WebDriver driver) {
+	public static void flash(WebElement element, WebDriver driver) throws InterruptedException {
 		
 		JavascriptExecutor jse = ((JavascriptExecutor)driver);
 		String bgcolor = element.getCssValue("backgroundColor");
@@ -96,15 +96,10 @@ public class JavaScriptExecutorConcept {
 		}
 	}
 		
-	public static void changeColor(String color, WebElement element, WebDriver driver){
+	public static void changeColor(String color, WebElement element, WebDriver driver) throws InterruptedException{
 			JavascriptExecutor js = ((JavascriptExecutor)driver);
-			js.executeScript("arguments[0].style.backgroundColor = '"+color+"'", element);
-			
-		try {
+     		js.executeScript("arguments[0].style.backgroundColor = '"+color+"'", element);
 			Thread.sleep(30);
-		}catch(InterruptedException e) {
-			
-		}
 	}
 	
 	public static void drawBorder(WebElement element, WebDriver driver) {
@@ -133,20 +128,20 @@ public class JavaScriptExecutorConcept {
 	
 	public static String getTitleByJS(WebDriver driver) {
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
-		String title = js.executeScript("return document.title;").toString(); //the first is there goes 0(first history ) and then it will refresh the browser
+		String title = js.executeScript("return document.title;").toString(); 
 	    return title;
 	}
 	
 	public static String getPageInnerTextByJS(WebDriver driver) {
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
-		String innerText = js.executeScript("return document.documentElement.innerText;").toString(); //the first is there goes 0(first history ) and then it will refresh the browser
+		String innerText = js.executeScript("return document.documentElement.innerText;").toString(); 
 	    return innerText;
 	    
 	}
 	
 	public static void scrollPageDown(WebDriver driver) {
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
-		js.executeScript("window.scrollTo(0,document.body.scrollHeight)"); //the first is there goes 0(first history ) and then it will refresh the browser
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight)"); 
 	}
 	
 	public static void scrollIntoView(WebElement element, WebDriver driver) {

@@ -18,15 +18,14 @@ public class ReadFileLineByLine {
 				System.out.println();
 			}
 
-		 }
-	}
+
 	
 	//Write a program to get maximum word count in a line from a file.
 	
-	/*String s= null;
-        intmaxCount=0;
-		BufferedReader br=new BufferedReader(new FileReader("C:\\Users\\Dell1\\Desktop\\MyFile.txt"));
-		while((s=br.readLine())!=null){
+
+        int maxCount=0;
+		BufferedReader brr=new BufferedReader(new FileReader("H:\\Edureka\\Selenium\\RamyaResume.doc"));
+		while((s=brr.readLine())!=null){
 			String arr[]=s.split(" ");
 			int count=arr.length;
 			if(count>maxCount){
@@ -35,8 +34,8 @@ public class ReadFileLineByLine {
 		}
 		System.out.println(maxCount);
 
-
-	*/
+	 }
+}
 //To read the line print line in reverse order word by word
 //String arr[] =  s.split(" ");
 //ArrayList<String> al = new ArrayList<String>(Arrays.asList(arr)); --> to convert array into arrayList

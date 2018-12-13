@@ -14,6 +14,7 @@ public class FactorialUsingRecurrsion {
 		FactorialUsingRecurrsion myObj = new FactorialUsingRecurrsion();
 		int n = 6;
 		System.out.println(myObj.fact(n));
+		
 
 	}
 

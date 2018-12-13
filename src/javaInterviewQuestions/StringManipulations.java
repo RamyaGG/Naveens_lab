@@ -8,6 +8,20 @@ public class StringManipulations {
 		String str = "The rains have started here selenium";
 		String str1 = "The rains have started here Selenium";
 		
+		
+		String string1= null;
+		System.out.println(string1+"======="); // null=======
+		String string2="";
+		System.out.println(string2+"=======");
+		System.out.println(string1+string2+string1); //nullnull
+		
+		//INT: Output of below snippet
+		String a1 = "Hello";  
+		String a2 = null;
+		String a3 = new String("null"); // we cannt write like String a3 = new String(null)
+		String a4 = a3;
+		System.out.println(a1+a2+a3+a4); //Output : Hellonullnullnull
+		
 		System.out.println(str.length());
 		
 		System.out.println(str.charAt(5));
@@ -29,12 +43,12 @@ public class StringManipulations {
 		System.out.println(str.equalsIgnoreCase(str1));
 		
 		//subString
-		
+		System.out.println("----------SubString-------------");
 		System.out.println(str.substring(0, 8));
 		
 		String s = "   Hello World   ";
 		
-		System.out.println(s.trim());
+		System.out.println(s.trim()); // it will trim the extra spaces at the begining and at the end . Not in the middle
 		System.out.println(s.replace('H', 'h'));
 		System.out.println(s.replaceAll(" ", ""));
 		

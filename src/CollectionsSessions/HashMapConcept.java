@@ -13,7 +13,8 @@ public class HashMapConcept {
 		//stores the values  - key - value pair
 		//it may have one null key and multiple null values
 		//it maintains no order
-		//hashmap is not synchronized -- not thread safe. if it is used in MultiThreading Environment then more than one thread can access and process the hashMap simultaneously
+		//hashmap is not synchronized -- not thread safe. if it is used in MultiThreading Environment then more than one thread 
+		//can access and process the hashMap simultaneously
 		//it means there are multiple threads running on then hashMap objects can be acessed by all the threads
 		//so the performance of the hashmap will be increased automatically
 		//Whenever you have to use fast performance system in that case we have to use HashMap

@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AbhibusCalendarByJS {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		//id="a_2018_4_10"
 
 		System.setProperty("webdriver.chrome.driver", "H:\\Edureka\\Selenium\\chromedriver_win32\\chromedriver.exe");
@@ -24,7 +24,7 @@ public class AbhibusCalendarByJS {
 	
 		
 		WebElement date = driver.findElement(By.id("datepicker1"));
-        String dateVal = "28-05-2018";
+        String dateVal = "28-06-2018";
         
         selectDateByJS(driver, date, dateVal);
     	

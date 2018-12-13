@@ -21,10 +21,15 @@ public class DragAndDropConcept {
 		driver.get("http://jqueryui.com/droppable");
 		
 		driver.switchTo().frame(0); // switch to frame if it is present
+		
+//		driver.switchTo().parentFrame();
+//		driver.switchTo().frame(WebElement)
+//		driver.switchTo().frame(name)
 
 		Actions action = new Actions(driver);
 		
-		
+//		action.doubleClick(WebElement target)
+//		action.contextClick(WebElement target) //for right click
 		
 		action.dragAndDrop(driver.findElement(By.xpath("//*[@id='draggable']")), driver.findElement(By.xpath("//*[@id='droppable']"))).build().perform();
 

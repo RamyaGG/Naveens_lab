@@ -11,7 +11,7 @@ public class ArrayListConcept {
 		// a[3] = 40; array index out of bound exception will occur here.
 		// dynamic array -- . ArrayList
 
-		ArrayList ar = new ArrayList(); // this is called non GenericarrayList objects . We can store string , double,
+		ArrayList ar = new ArrayList(); // this is called non Generic arrayList objects . We can store string , double,
 										// int, boolean also
 		// 1. it can contain duplicate values also
 		// 2. It maintains insertion order
@@ -19,12 +19,17 @@ public class ArrayListConcept {
 		// concept. Thats why ArrayList is slow
 		// 4. It allows random access to fetch the elements because it stores the values
 		// on the basis of indexes
-
+//
 		ar.add(10); // 0
 		ar.add(20); // 1
 		ar.add(30); // 2
+		ar.add(30);
+		ar.set(2, 25);
+		ar.remove(2);
 
+		System.out.println(ar);
 		System.out.println(ar.size());
+
 
 		ar.add(40);
 		ar.add(50);
@@ -33,6 +38,7 @@ public class ArrayListConcept {
 		ar.add(12.33);
 		ar.add("test");
 		ar.add(false);
+		ar.add('r');
 
 		System.out.println(ar.size());
 
@@ -86,7 +92,7 @@ public class ArrayListConcept {
 			System.out.println(emp.dept);
 		}
 
-		System.out.println("********************************");
+		System.out.println("*****************MERGE***************");
 
 		// addAll()
 
@@ -101,17 +107,17 @@ public class ArrayListConcept {
 		ar4.add("Dev");
 		ar4.add("Java");
 		ar4.add("JavaScript");
-		//ar4.remove("Dev");
+		ar4.add("QTP");
 
 		ar3.addAll(ar4); // To merger two array List. Adding second list in first List
-
+		
 		for (int i = 0; i < ar3.size(); i++) {
 			System.out.println(ar3.get(i));
 
 		}
 		
 		System.out.println(ar3);
-		System.out.println("********************************");
+		System.out.println("*****************RemoveAll***************");
 
 		// RemoveAll
 		ar3.removeAll(ar4);
@@ -121,7 +127,8 @@ public class ArrayListConcept {
 
 		}
 
-		System.out.println("********************************");
+		System.out.println(ar3);
+		System.out.println("*****************RetainAll***************");
 
 		// retainAll : Comman Part if you want to check
 
@@ -141,6 +148,7 @@ public class ArrayListConcept {
 			System.out.println(ar5.get(i));
 
 		}
+		System.out.println(ar5);
 
 	}
 

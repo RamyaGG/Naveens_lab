@@ -17,7 +17,7 @@ public class LargeSmallElementArray {
 		for (int i=0; i<a.length; i++) {
 			if(a[i]>largest) {
 				largest = a[i];
-			}else if(a[i]<smallest) {
+			 }else if(a[i]<smallest) {
 				smallest = a[i];
 			}
 		}

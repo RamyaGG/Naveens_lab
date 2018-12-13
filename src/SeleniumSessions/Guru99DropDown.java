@@ -35,6 +35,7 @@ public class Guru99DropDown {
 		String childId = it.next();
 		
 		driver.switchTo().window(childId);
+		
 		driver.get("http://demo.guru99.com/test/");
 		driver.close();
 		
@@ -43,6 +44,8 @@ public class Guru99DropDown {
 		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys(Keys.TAB);
 		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys("0203PM");
 		
+//		Above three line is equivalent ot below one line
+//		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys("01042018"+Keys.TAB+"0203PM");
 	}
 
 }

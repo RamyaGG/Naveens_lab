@@ -22,6 +22,13 @@ public class CalendarSelectTest {
 
 	public static void main(String[] args) {
 
+		// select.getOptions();
+		// select.deselectAll();
+		// select.deselectByIndex(arg0);
+		// select.getAllSelectedOptions();
+		// select.getFirstSelectedOption();
+		// select.isMultiple();
+
 		System.setProperty("webdriver.chrome.driver", "H:\\Edureka\\Selenium\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
@@ -50,47 +57,44 @@ public class CalendarSelectTest {
 
 		Select select1 = new Select(driver.findElement(By.name("slctYear")));
 		select1.selectByVisibleText(year);
-		
-		//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[1]
-		//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]
-		//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[3]
-		//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[4]
-		//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[6]
-		//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[1]
-		
+
+		// *[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[1]
+		// *[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]
+		// *[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[3]
+		// *[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[4]
+		// *[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[6]
+		// *[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[1]
+
 		String before_xpath = "//*[@id='crmcalendar']/table/tbody/tr[2]/td/table/tbody/tr[";
 		String after_xpath = "]/td[";
-		
+
 		final int totalWeekDays = 7;
 		boolean flag = false;
 		String dayVal;
-		//2-1 2-2 2-3 2-4 2-5 2-6 2-7
-		//3-1 3-2 3-3 3-4 3-5 3-6 3-7
-		for(int rowNum=2; rowNum<=7; rowNum++) {
-			for(int colNum=1; colNum<=totalWeekDays; colNum++) {
+		// 2-1 2-2 2-3 2-4 2-5 2-6 2-7
+		// 3-1 3-2 3-3 3-4 3-5 3-6 3-7
+		for (int rowNum = 2; rowNum <= 7; rowNum++) {
+			for (int colNum = 1; colNum <= totalWeekDays; colNum++) {
 				try {
-			dayVal = driver.findElement(By.xpath(before_xpath+rowNum+after_xpath+colNum+"]")).getText();
-				}catch(NoSuchElementException e) {
+					dayVal = driver.findElement(By.xpath(before_xpath + rowNum + after_xpath + colNum + "]")).getText();
+				} catch (NoSuchElementException e) {
 					System.out.println("Please Enter Correct date Value");
 					flag = true;
 					break;
 				}
-			
-			
-			System.out.println(dayVal);
-			if(dayVal.equals(day)) {
-				driver.findElement(By.xpath(before_xpath+rowNum+after_xpath+colNum+"]")).click();
-				flag = true;
-				break;
+
+				System.out.println(dayVal);
+				if (dayVal.equals(day)) {
+					driver.findElement(By.xpath(before_xpath + rowNum + after_xpath + colNum + "]")).click();
+					flag = true;
+					break;
+				}
 			}
-			
-			}
-			
-			if(flag) {
+
+			if (flag) {
 				break;
 			}
 		}
-			
 
 	}
 

@@ -2,7 +2,7 @@ package javaInterviewQuestions;
 
 import java.util.Arrays;
 
-//Write a program tocheck number of times substring appeared in a string
+//Write a program to check number of times substring appeared in a string
 
 public class WordApperance {
 

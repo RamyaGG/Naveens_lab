@@ -32,9 +32,9 @@ public class GoogleSearchTest {
 	  driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
 	  
 	  driver.get("http://www.google.com");
-	  driver.findElement(By.id("lst-ib")).sendKeys("Java");
+	  driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Java");
 	  
-	  List<WebElement> list =  driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbqs_c']")); // dobleslash //li total no of child elements
+	  List<WebElement> list =  driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbl1']")); // dobleslash //li total no of child elements
 	  
 	  System.out.println("Total no. of suggestions is : "+list.size());
 	  
@@ -46,12 +46,12 @@ public class GoogleSearchTest {
 		  }
 	  }
 	  
-	  //li/descendant::div --> we are putting desscendant on li it means 
+	  //li/descendant::div --> we are putting descendant on li it means 
 	  //under this li how many descendant divs are available. it does not matter
 	  //its child divs are there under child child is there . 
 	  //it ll give u the complete list of divs from the child parent
 	  //from the grand parent child also from the child to child also
-	  // then we have to decide which child we have to pick. i have to pick div where class = sbqs_c
+	  // then we have to decide which child we have to pick. i have to pick div where class = sbl1
 
 	}
 

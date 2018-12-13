@@ -7,9 +7,9 @@ public class Test {
 
 	 public static void main(String[] args) {
 		Test test = null;
-		System.out.println(Test.i);
-		System.out.println(test.i);
-		
+		System.out.println(Test.i); //5
+		System.out.println(test.i); //5
+		System.out.println(test);   //null
 
 	}
 

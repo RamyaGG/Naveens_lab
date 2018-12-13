@@ -38,12 +38,12 @@ public class HandleWindowPopUp {
 		System.out.println("Child Window ID is "+childWindowID);
 		
 		driver.switchTo().window(childWindowID); // now the focus is on child window
-		System.out.println("Child Window Pop UP Title "+driver.getTitle());
+		System.out.println("Child Window Pop UP Title ---->"+driver.getTitle());
 		
 		driver.close(); // this will close the browser where the control is available. used to close specific window browser
 		//Driver control is lost we have take control to parent window
 		driver.switchTo().window(parentWindowId); // control is available on parent window
-		System.out.println("Parent Window Title "+driver.getTitle());
+		System.out.println("Parent Window Title ---->"+driver.getTitle());
 		driver.quit(); // used to close all the browser window
 
 	}

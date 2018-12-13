@@ -1,9 +1,12 @@
 package SeleniumSessions;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /*How to handle dynamic WebTable In Selenium
@@ -40,8 +43,8 @@ public class DynamicWebTableHandle {
 		driver.get("http://www.freecrm.com");
 
 		driver.findElement(By.name("username")).sendKeys("RamyaGG");
-		driver.findElement(By.name("password")).sendKeys("Framya28!");
-		driver.findElement(By.xpath("//input[@type='submit']")).submit();
+		driver.findElement(By.name("password")).sendKeys("Framya28!"+Keys.ENTER);
+	//	driver.findElement(By.xpath("//input[@type='submit']")).submit();
 		
 		driver.switchTo().frame("mainpanel");
 		Thread.sleep(2000);
@@ -73,22 +76,15 @@ public class DynamicWebTableHandle {
 		
 		//Method - 2 : Ctr+F --> Chrome
 		
+		//INT : Print table values one by one
+		List<WebElement> list = driver.findElements(By.xpath("//form[@id='vContactsForm']//tr//td[@class='datalistrow']"));
+		for(WebElement w : list) {
+			System.out.println(w.getText());
+		}
+		
 		driver.findElement(By.xpath("//a[contains(text(),'test2 test2')]//parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'ui uii')]//parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'ui uiii')]//parent::td//following-sibling::td//a[contains(text(),'xyz')]")).click();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }

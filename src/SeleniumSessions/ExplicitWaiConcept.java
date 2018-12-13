@@ -10,6 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWaiConcept {
 	
+	
+	//Implicit wait(if any) will be applied first . Bcoz it is global wait. It will be runing all the time
+	//Lets say i have given implicit wait of 20 secs and explicit wait of 20 secs for login button
+	//First it will wait for 20 secs for implicit wait and 20 secs for explicit wait for login. So it will become 20+20 secs
+	//So for a specific element (login button) it will wait for 40 sec
+	//So it is not recommended to use both implicit and explicit wait together
+	//Implicit wait can be changed anyware and at any time in your program
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "H:\\Edureka\\Selenium\\chromedriver_win32\\chromedriver.exe");
@@ -33,5 +40,4 @@ public class ExplicitWaiConcept {
 		locator.click();
 		
 	}
-
 }

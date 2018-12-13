@@ -18,19 +18,16 @@ public class HandleDropBox {
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		
 		driver.get("https://www.facebook.com");
 		
-		driver.findElement(By.id("u_0_l")).sendKeys("dfgdgdfg");
-		driver.findElement(By.id("u_0_n")).sendKeys("dfdfd");
-		driver.findElement(By.id("u_0_q")).sendKeys("55553656");
-		driver.findElement(By.id("u_0_x")).sendKeys("Password");
+		driver.findElement(By.id("u_0_j")).sendKeys("55553656");
+		driver.findElement(By.id("u_0_l")).sendKeys("lastname");
+		driver.findElement(By.id("u_0_o")).sendKeys("mobile");
+		driver.findElement(By.id("u_0_v")).sendKeys("Password");
 
 		Select day = new Select(driver.findElement(By.id("day")));
 		day.selectByVisibleText("19");
 		
-		
-
 		Select month = new Select(driver.findElement(By.id("month")));
 		month.selectByVisibleText("Oct");
 
@@ -40,10 +37,10 @@ public class HandleDropBox {
 		//driver.findElement(By.xpath("//select[@id='month']")).sendKeys("Oct"); Even this will work
 		//driver.findElement(By.xpath("//select[@id='year']")).sendKeys("2010");
 
-		driver.findElement(By.id("u_0_b")).click();
+		driver.findElement(By.id("u_0_11")).click();
 		
 		System.out.println(day.isMultiple());
-		day.deselectAll();
+	//	day.deselectAll(); we cannot write this bcoz day field does not support multi selection
 		
 //		isMultiple()  	
 //		Returns TRUE if the drop-down element allows multiple selections at a time; FALSE if otherwise.
