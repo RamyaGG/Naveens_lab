@@ -1,6 +1,7 @@
 package com.test;
 
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.*;
 
 public class TestNgFeatures {
@@ -8,7 +9,8 @@ public class TestNgFeatures {
 	@Test(priority=-1)
 	public void loginTest() {
 		//int i= 9/0;
-		Assert.assertEquals(true, false);
+		//	throw new SkipException("RAMYA");
+		Assert.assertEquals(true, false);	
 	}
 	
 	@Test(dependsOnMethods="regPageTest", priority=2)

@@ -11,6 +11,7 @@ public class Navigations {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		
+		//using aria-label Attribute we can get the default text of the textbox. use getAttribute("aria-label")
 		driver.get("http://www.google.com"); // this will refresh the browser
 		
 		driver.navigate().to("http://www.amazon.in");
@@ -26,7 +27,10 @@ public class Navigations {
 		driver.navigate().back();
 		Thread.sleep(2000);
 		
+	//	driver.switchTo().activeElement().sendKeys("Ramya"); to get current focused elememnt where the cursor is
+		
 		driver.navigate().to(driver.getCurrentUrl()); // this will refresh the browser
+		
 	}
 
 }

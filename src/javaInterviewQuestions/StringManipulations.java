@@ -32,7 +32,7 @@ public class StringManipulations {
 		
 		System.out.println(str.indexOf('s', str.indexOf('s', str.indexOf('s', str.indexOf('s')+1))+1)); //Third Occurance of s
 		
-		System.out.println(str.indexOf("have")); // first occurance of have
+		System.out.println("first occurance of have"+str.indexOf("have")); // first occurance of have
 		
 		System.out.println(str.indexOf("Hello")); //if it not present then it will return -1. it will not throw any exception
 		

@@ -41,7 +41,7 @@ public class Guru99DropDown {
 		
 		driver.switchTo().window(parentId);
 		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys("01041990");
-		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys(Keys.TAB);
+		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys(Keys.TAB); //Keys.chord(Keys.SHIFT+"f")
 		driver.findElement(By.xpath("//input[@name='bdaytime']")).sendKeys("0203PM");
 		
 //		Above three line is equivalent ot below one line

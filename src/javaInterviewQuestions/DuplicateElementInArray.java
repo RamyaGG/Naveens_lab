@@ -26,7 +26,7 @@ public class DuplicateElementInArray {
 				}
 			}
 		}
-		System.out.println(list);
+		System.out.println(list); 
 
 	System.out.println("****************************************************");
 	

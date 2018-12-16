@@ -26,9 +26,7 @@ public class B extends A {
 		B b = new B();
 		b.show();
 		b.display();
-		b.display1();
-	
-		
+		b.display1();	
 		
 	}
 

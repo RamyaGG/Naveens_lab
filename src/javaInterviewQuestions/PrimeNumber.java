@@ -3,8 +3,8 @@ package javaInterviewQuestions;
 public class PrimeNumber {
 
 	public static void main(String args[]) {
-		int i, flag = 0;
-		int n = 3;// it is the number to be checked
+	/*	int i, flag = 0;
+		int n = 9;// it is the number to be checked
 
 		if (n == 0 || n == 1) {
 			System.out.println(n + " is not prime number");
@@ -21,8 +21,24 @@ public class PrimeNumber {
 				System.out.println(n + " is prime number");
 			}
 		} // end of else
-	}
+	} 
 	
+	*/
+		System.out.println("Prime Numbers from 1 to 100\n");
+		int flag;
+		for (int i = 1; i <= 100; i++) {
+			flag = 0;
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) {
+					flag = 1;
+					break;
+				}
+			}
+			if (flag == 0) {
+				System.out.print(i + " ");
+			}
 
+		}
+	}
 
 }
