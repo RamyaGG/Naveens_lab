@@ -46,7 +46,7 @@ public class DuplicateCharacterString {
 		
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
 		for(Character a: charArray) {
-			Integer count = map.get(a);
+			Integer count = map.get(a); //map.get(a)-- returns a value to which specified key is mapped to 
 			if(count==null) {
 				map.put(a, 1);
 			}else {

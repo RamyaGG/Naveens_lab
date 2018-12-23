@@ -78,8 +78,5 @@ public class StringManipulations {
 		System.out.println(x+y+(a+b)); //HelloWorld300
 		
 		//String can be concatenate with any type int, long , double, float etc
-		
-
 	}
-
 }

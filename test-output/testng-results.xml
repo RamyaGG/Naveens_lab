@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" ignored="0" total="6" passed="2">
+<testng-results skipped="4" failed="0" ignored="0" total="6" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="114" started-at="2018-12-14T12:52:28Z" finished-at="2018-12-14T12:52:28Z">
+  <suite name="Default suite" duration-ms="77" started-at="2018-12-18T16:01:15Z" finished-at="2018-12-18T16:01:15Z">
     <groups>
       <group name="A">
-        <method signature="TestNgFeatures.aissing()[pri:0, instance:com.test.TestNgFeatures@4abdb505]" name="aissing" class="com.test.TestNgFeatures"/>
+        <method signature="TestNgFeatures.aissing()[pri:0, instance:com.test.TestNgFeatures@1500955a]" name="aissing" class="com.test.TestNgFeatures"/>
       </group> <!-- A -->
     </groups>
-    <test name="Default test" duration-ms="114" started-at="2018-12-14T12:52:28Z" finished-at="2018-12-14T12:52:28Z">
+    <test name="Default test" duration-ms="77" started-at="2018-12-18T16:01:15Z" finished-at="2018-12-18T16:01:15Z">
       <class name="com.test.TestNgFeatures">
-        <test-method status="FAIL" signature="loginTest()[pri:-1, instance:com.test.TestNgFeatures@4abdb505]" name="loginTest" duration-ms="16" started-at="2018-12-14T12:52:28Z" finished-at="2018-12-14T12:52:28Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="loginTest()[pri:-1, instance:com.test.TestNgFeatures@1500955a]" name="loginTest" duration-ms="16" started-at="2018-12-18T16:01:15Z" finished-at="2018-12-18T16:01:15Z">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[RAMYA]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:568)
-at org.testng.Assert.assertEquals(Assert.java:578)
-at com.test.TestNgFeatures.loginTest(TestNgFeatures.java:13)
+              <![CDATA[org.testng.SkipException: RAMYA
+at com.test.TestNgFeatures.loginTest(TestNgFeatures.java:12)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,21 +45,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="aissing()[pri:0, instance:com.test.TestNgFeatures@4abdb505]" name="aissing" duration-ms="10" started-at="2018-12-14T12:52:28Z" finished-at="2018-12-14T12:52:28Z">
+        <test-method status="PASS" signature="aissing()[pri:0, instance:com.test.TestNgFeatures@1500955a]" name="aissing" duration-ms="13" started-at="2018-12-18T16:01:15Z" finished-at="2018-12-18T16:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aissing -->
-        <test-method status="SKIP" signature="regPageTest()[pri:3, instance:com.test.TestNgFeatures@4abdb505]" name="regPageTest" duration-ms="0" started-at="2018-12-14T12:52:28Z" depends-on-methods="com.test.TestNgFeatures.loginTest" finished-at="2018-12-14T12:52:28Z">
+        <test-method status="SKIP" signature="regPageTest()[pri:3, instance:com.test.TestNgFeatures@1500955a]" name="regPageTest" duration-ms="0" started-at="2018-12-18T16:01:15Z" depends-on-methods="com.test.TestNgFeatures.loginTest" finished-at="2018-12-18T16:01:15Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TestNgFeatures.regPageTest()[pri:3, instance:com.test.TestNgFeatures@4abdb505] depends on not successfully finished methods]]>
+              <![CDATA[Method TestNgFeatures.regPageTest()[pri:3, instance:com.test.TestNgFeatures@1500955a] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNgFeatures.regPageTest()[pri:3, instance:com.test.TestNgFeatures@4abdb505] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TestNgFeatures.regPageTest()[pri:3, instance:com.test.TestNgFeatures@1500955a] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -90,48 +84,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regPageTest -->
-        <test-method status="PASS" signature="loginTest1()[pri:0, instance:com.test.TestNgFeatures@4abdb505]" name="loginTest1" duration-ms="0" started-at="2018-12-14T12:52:28Z" finished-at="2018-12-14T12:52:28Z">
+        <test-method status="PASS" signature="loginTest1()[pri:0, instance:com.test.TestNgFeatures@1500955a]" name="loginTest1" duration-ms="0" started-at="2018-12-18T16:01:15Z" finished-at="2018-12-18T16:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest1 -->
-        <test-method status="SKIP" signature="homePageTest()[pri:2, instance:com.test.TestNgFeatures@4abdb505]" name="homePageTest" duration-ms="0" started-at="2018-12-14T12:52:28Z" depends-on-methods="com.test.TestNgFeatures.regPageTest" finished-at="2018-12-14T12:52:28Z">
+        <test-method status="SKIP" signature="searchPageTest()[pri:1, instance:com.test.TestNgFeatures@1500955a]" name="searchPageTest" duration-ms="0" started-at="2018-12-18T16:01:15Z" depends-on-methods="com.test.TestNgFeatures.loginTest, com.test.TestNgFeatures.homePageTest" finished-at="2018-12-18T16:01:15Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TestNgFeatures.homePageTest()[pri:2, instance:com.test.TestNgFeatures@4abdb505] depends on not successfully finished methods]]>
+              <![CDATA[Method TestNgFeatures.searchPageTest()[pri:1, instance:com.test.TestNgFeatures@1500955a] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNgFeatures.homePageTest()[pri:2, instance:com.test.TestNgFeatures@4abdb505] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageTest -->
-        <test-method status="SKIP" signature="searchPageTest()[pri:1, instance:com.test.TestNgFeatures@4abdb505]" name="searchPageTest" duration-ms="0" started-at="2018-12-14T12:52:28Z" depends-on-methods="com.test.TestNgFeatures.loginTest, com.test.TestNgFeatures.homePageTest" finished-at="2018-12-14T12:52:28Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestNgFeatures.searchPageTest()[pri:1, instance:com.test.TestNgFeatures@4abdb505] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNgFeatures.searchPageTest()[pri:1, instance:com.test.TestNgFeatures@4abdb505] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TestNgFeatures.searchPageTest()[pri:1, instance:com.test.TestNgFeatures@1500955a] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -156,6 +119,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageTest -->
+        <test-method status="SKIP" signature="homePageTest()[pri:2, instance:com.test.TestNgFeatures@1500955a]" name="homePageTest" duration-ms="0" started-at="2018-12-18T16:01:15Z" depends-on-methods="com.test.TestNgFeatures.regPageTest" finished-at="2018-12-18T16:01:15Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgFeatures.homePageTest()[pri:2, instance:com.test.TestNgFeatures@1500955a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgFeatures.homePageTest()[pri:2, instance:com.test.TestNgFeatures@1500955a] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
       </class> <!-- com.test.TestNgFeatures -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

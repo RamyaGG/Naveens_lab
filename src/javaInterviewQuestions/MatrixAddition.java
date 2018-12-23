@@ -3,7 +3,7 @@ package javaInterviewQuestions;
 public class MatrixAddition {
 
 	public static void main(String[] args) {
-		int a[][]= {{1,2,3},{4,5,6}};
+		int a[][]= {{1,2,3},{4,5,6}}; //a.length will give no. of rows. in this case its 2
 		int b[][]= {{1,1,1},{2,2,2}};
 		int sum[][]= new int[2][3];
 		

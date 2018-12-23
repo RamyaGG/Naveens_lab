@@ -28,6 +28,13 @@ public class SeparateAlphabetAndNumericValues {
 		}
 		System.out.println("Alphabets values are : "+alphabets);	
 		System.out.println("Numeric values are : "+numeric);
+		
+		String inputString1 = "Interview01 Java234 Program567";
+		String alphabets1=inputString1.replaceAll("[0-9]", "");
+		String numeric1= inputString1.replaceAll("[a-zA-Z ]", "");
+		
+		System.out.println("Alphabets values are : "+alphabets1);	
+		System.out.println("Numeric values are : "+numeric1);
 
 	}
 
