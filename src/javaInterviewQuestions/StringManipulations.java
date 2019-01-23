@@ -22,6 +22,16 @@ public class StringManipulations {
 		String a4 = a3;
 		System.out.println(a1+a2+a3+a4); //Output : Hellonullnullnull
 		
+		System.out.println("\nMphasis Interview Question");
+		String string = "cook";
+		String strArr[]=string.split("o"); //[c, , k]
+		System.out.println(strArr.length);
+		System.out.println(Arrays.toString(strArr));
+		for(String s: strArr) {
+			System.out.println(s);
+		}
+		System.out.println("Mphasis Interview Question\n");
+		
 		System.out.println(str.length());
 		
 		System.out.println(str.charAt(5));

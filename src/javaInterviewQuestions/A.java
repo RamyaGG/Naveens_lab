@@ -10,5 +10,12 @@ public class A {
 		System.out.println("dispay1 method");
 	}
 	
+//	public void display1(String name) {  We can overload and override same method
+//		System.out.println(name);
+//	}
+//	
+//	public void display1(int num) {
+//		System.out.println(num);
+//	}
 
 }

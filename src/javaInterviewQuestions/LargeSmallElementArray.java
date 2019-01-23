@@ -9,7 +9,7 @@ public class LargeSmallElementArray {
 		int largest = a[0];
 		int smallest = a[0];
 		a[5]=11;
-		System.out.println(a.length);
+		System.out.println(a.length); //6
 		
 		
 		

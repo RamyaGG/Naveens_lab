@@ -12,6 +12,7 @@ public class WordApperance {
 		String arr[] = s.split("raghu"); //[ne ,  ,  ,  se kaha ki ,  nahi aayega] replace raghu with , for understanding
 		
 		System.out.println((arr.length) - 1);
+		System.out.println(Arrays.toString(arr));
 
 	}
 

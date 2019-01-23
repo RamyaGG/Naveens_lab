@@ -1,9 +1,11 @@
 package SeleniumSessions;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -40,6 +42,12 @@ public class HandleDropBox {
 		driver.findElement(By.id("u_0_11")).click();
 		
 		System.out.println(day.isMultiple());
+		
+		List<WebElement> allDayOptions = day.getOptions();
+		for (WebElement w : allDayOptions) {
+		System.out.println(w.getText());
+		}
+		
 	//	day.deselectAll(); we cannot write this bcoz day field does not support multi selection
 		
 //		isMultiple()  	

@@ -13,10 +13,11 @@ public class ArmstrongNumber {
 		
 		int temp=i;
 		int sum=0;
+		int r;
 		
 		while(temp!=0){ 
 			
-			int r=temp%10;
+			r=temp%10;
 			sum=sum+r*r*r;
 			temp=temp/10;
 		}

@@ -7,6 +7,8 @@ public class LengthOfStringWithoutBuiltIn {
 		str=str+'\0';
 		int count=0;
 		
+		System.out.println(str);//Ramya GG  After GG one space will come 
+		
 		for(int i=0; str.charAt(i)!= '\0'; i++) {
 			count ++;
 			
