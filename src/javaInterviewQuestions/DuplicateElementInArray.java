@@ -21,8 +21,10 @@ public class DuplicateElementInArray {
 			for(int j=i+1; j<names.length; j++) {
 				if(names[i].equalsIgnoreCase(names[j])) {
 					System.out.println("Duplicate Element is "+names[i]);
-				
+				    
+					if(!(list.contains(names[i]))) {
 					list.add(names[i]);
+					}
 				}
 			}
 		}

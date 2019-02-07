@@ -30,13 +30,11 @@ public class SecondLargeAndSmallInArray {
 				SecondSmall = a[i];
 			}
 		}
-
 		System.out.println("Given Array is:: " + Arrays.toString(a));
 		System.out.println("Largest Num is:: " + largest);
 		System.out.println("Second Largest Num is:: " + secondLarge);
 		System.out.println("Smallest Num is:: " + smallest);
 		System.out.println("Second Smallest Num is:: " + SecondSmall);
-
 	}
 
 }

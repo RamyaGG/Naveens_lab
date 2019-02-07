@@ -17,7 +17,7 @@ public class LadderInterviewQ2 {
 		int number=15;
 		int sum =0;
 		int p=1;
-		for(int i=0; i<=number; i++) {
+		for(int i=1; i<=number; i++) {
 			sum = sum +i;
 			if(sum>number) {
 				System.out.println("Ladder not possible -1");
@@ -46,7 +46,5 @@ public class LadderInterviewQ2 {
 //				}
 //			}
 		}
-
 	}
-
 }

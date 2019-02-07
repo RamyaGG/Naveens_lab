@@ -1,5 +1,7 @@
 package javaInterviewQuestions;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class RemoveJunkCharInString {
 
 	public static void main(String[] args) {
@@ -18,6 +20,15 @@ public class RemoveJunkCharInString {
 		System.out.println(s1);
 		s1=s1.replaceAll("\\s+", " "); // to trim the extra spaces between the words
 		System.out.println(s1);
+		
+		//method 2 
+		
+		// uneven spaces between words
+		String blogName = "how to   do    in  java   .         com";
+		 
+		String nameWithProperSpacing = StringUtils.normalizeSpace( blogName );
+		 
+		System.out.println( nameWithProperSpacing );
 	}
 
 }

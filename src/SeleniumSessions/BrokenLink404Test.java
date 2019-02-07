@@ -50,11 +50,8 @@ public class BrokenLink404Test {
 			if (linksList.get(i).getAttribute("href")!=null &&(! linksList.get(i).getAttribute("href").contains("javascript"))) { // Exclude all the links and img which does not have href attribute
 				//and condition is for javascript:void(openWin('https://help.crmpro.com/
 				activeLinks.add(linksList.get(i));
-				
-				
+					
 			}
-			
-			
 		}
 		
 		//get the size of active links list

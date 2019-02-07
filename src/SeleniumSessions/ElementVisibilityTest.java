@@ -18,6 +18,10 @@ public class ElementVisibilityTest {
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		
 		driver.get("http://www.freecrm.com/register");
+		
+		//For hidden elements isDisplayed() will return false
+		System.out.println("hidden "+driver.findElement(By.xpath("//input[@type='hidden' and @name='promotion_code']")).isDisplayed());
+		
 		//1. isDisplayed() method : applicable for all the elements
 		boolean b1 = driver.findElement(By.id("submitButton")).isDisplayed(); //for submit button
 		System.out.println(b1);//true. If it is displayed then it ll return true

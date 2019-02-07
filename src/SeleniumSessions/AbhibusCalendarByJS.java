@@ -8,6 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+//How to validate Colors
+//Assert.assertEquals(Color.fromString(hoverElement.get(i).getCssValue("background-color")).asHex(), color, "Color mismatch");
+
 public class AbhibusCalendarByJS {
 
 	public static void main(String[] args) { 
@@ -22,7 +25,6 @@ public class AbhibusCalendarByJS {
 		
 		driver.get("http://www.abhibus.in");
 	
-		
 		WebElement date = driver.findElement(By.id("datepicker1"));
         String dateVal = "28-06-2018";
         

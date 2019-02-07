@@ -20,6 +20,8 @@ public class SwapList {
 		 Collections.replaceAll(al, 8, 7);
 		 System.out.println("After Replace 8 "+al);  //[4, 7, 19, 2]
 		 
+		 //ArrayList Comparion : list1.equals(list2)
+		 
 
 		String s = "Chiru nan maga mentalu loosu thikklu thu";
 		String arr[] = s.split(" ");

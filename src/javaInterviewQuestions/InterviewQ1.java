@@ -13,6 +13,12 @@ public class InterviewQ1 {
 		list.add(40);
 		list.add(50);
 		
+		for(int i=0; i<=5; i++) {
+			list.add(60); //Possible
+		}
+		
+		
+		
 		int j=0;
 		for(Integer i: list) {
 //			list.add(i); //These two are not possible . We can not add values in for each loop.java.util.ConcurrentModificationException
